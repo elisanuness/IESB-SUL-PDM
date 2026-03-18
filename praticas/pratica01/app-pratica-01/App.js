@@ -1,6 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
-import { useState } from 'react';
 //import { titulo } from './util'; // Importa variável definida
 //import qualquerCoisa from './util' //Importa a variável por default
 //import { Button } from 'react-native'; //Importa um botão
@@ -11,9 +10,6 @@ import { rotulo_input_meta, rotulo_btn_cadastro_meta, rotulo_lista_metas } from 
 
 
 export default function App() {
-
-  const [meta, setMeta] = useState('');
-  const [metas, setMetas] = useState([]);
 
   return (
     <View style={styles.mainContainer}>
