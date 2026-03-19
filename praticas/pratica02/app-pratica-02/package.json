@@ -1,5 +1,5 @@
 {
-  "name": "app-pratica-01",
+  "name": "app-pratica-02",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "expo": "~55.0.7",
+    "expo": "~55.0.8",
     "expo-status-bar": "~55.0.4",
     "react": "19.2.0",
     "react-native": "0.83.2"
