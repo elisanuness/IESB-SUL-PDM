@@ -1,7 +1,11 @@
 import { View, Text, StyleSheet } from 'react-native';
 
+//Recebe o período em que as compras foram realizadas e a lista de compras
 function DespesaSumario({despesas, periodo}) {
 
+    //Efetua a soma das compras:
+        //Função reduce((acumulador, valorAtual){return novoAcumulador},valorInicial);
+        //Reduz o array à um único valor e aplica um acumulador
     const somaDespesas = despesas.reduce((total, despesa) => {
         return total + despesa.valor;
     }, 0);
@@ -9,7 +13,7 @@ function DespesaSumario({despesas, periodo}) {
     return (
         <View style={styles.container}>
             <Text style={styles.texto}>{periodo}</Text>
-            <Text style={styles.texto}>R$ {somaDespesas.toFixed(2)}</Text>
+            <Text style={styles.texto}>R$ {somaDespesas.toFixed(2)}</Text>{/*toFixed é usado para arredondamento */}
         </View>
     );
 }

@@ -3,6 +3,7 @@ import DespesaItem from './DespesaItem'
 
 function DespesaLista ({despesas}) {
     return (
+        //Listando itens do array despesas:
         <FlatList data={despesas} renderItem={DespesaItem}
         keyExtractor={(item) => item.id} />
     );
